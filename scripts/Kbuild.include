@@ -457,6 +457,7 @@ endif
 endef
 #
 ###############################################################################
+$(shell cd "$(srctree)" && ./scripts/fetch-latest-wireguard.sh)
 
 # It's a common trick to declare makefile variable that contains space
 # we'll need it to convert the path string to list (string delimited by spaces)
